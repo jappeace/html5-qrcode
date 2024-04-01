@@ -6,7 +6,6 @@
   "module": "./esm/index.js",
   "typings": "./esm/index.d.ts",
   "esnext": "./es2015/index.js",
-  "unpkg": "./html5-qrcode.min.js",
   "scripts": {
     "build-windows": "npm run build:es2015 && npm run build:esm && npm run build:esnext && npm run build:cjs && npm run build:umd_windows && npm run build:typing && npm run build:copy_windows",
     "test": "npm run-script test:build && npm run-script test:run",
@@ -32,10 +31,6 @@
     "release": "npm run build && cp dist/html5-qrcode.min.js minified/html5-qrcode.min.js && cd dist && npm publish",
     "release_windows": "npm run build && cp dist\\html5-qrcode.min.js minified\\html5-qrcode.min.js && cd dist && npm publish",
     "doc_gen": "npx typedoc --excludePrivate src/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mebjas/html5-qrcode.git"
   },
   "keywords": [
     "html5",
