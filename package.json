@@ -3,6 +3,7 @@
   "version": "2.3.9",
   "description": "A cross platform HTML5 QR Code & bar code scanner",
   "main": "./src/index.js",
+  "typings": "./esm/index.d.ts",
   "scripts": {
     "build-windows": "npm run build:es2015 && npm run build:esm && npm run build:esnext && npm run build:cjs && npm run build:umd_windows && npm run build:typing && npm run build:copy_windows",
     "test": "npm run-script test:build && npm run-script test:run",
