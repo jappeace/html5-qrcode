@@ -12,13 +12,13 @@
  * http://www.denso-wave.com/qrcode/faqpatent-e.html
  */
 
-export {
+export type {
     Html5Qrcode,
     Html5QrcodeFullConfig,
     Html5QrcodeCameraScanConfig
 } from "./html5-qrcode";
 export { Html5QrcodeScanner } from "./html5-qrcode-scanner";
-export {
+export type {
     Html5QrcodeSupportedFormats,
     Html5QrcodeResult,
     QrcodeSuccessCallback,
@@ -26,7 +26,7 @@ export {
 } from "./core";
 export { Html5QrcodeScannerState } from "./state-manager";
 export { Html5QrcodeScanType } from "./core";
-export { 
+export type {
     CameraCapabilities,
     CameraDevice
 } from "./camera/core";
